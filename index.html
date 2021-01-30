@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codediet</title>
+    <link rel="stylesheet" href="./icofont/icofont.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- tailwind -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+        integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+        crossorigin="anonymous" /> -->
+  </head>
+
+  <body>
+    <header>
+      <!-- desktop menu -->
+      <nav class="hide_mobile">
+        <a href="#">
+          <img src="./img/Logo.png" class="d_logo" alt="" />
+        </a>
+
+        <ul class="menu_list">
+          <li class="menu_item">
+            <a href="index.html" class="active_item">Home</a>
+          </li>
+          <li class="menu_item"><a href="#">About</a></li>
+          <li class="menu_item"><a href="#">Connect</a></li>
+        </ul>
+        <p>
+          <i class="icofont-moon"></i>
+        </p>
+      </nav>
+      <!-- <i class="icofont-sun"></i> -->
+      <!-- end of desktop menu -->
+
+      <!-- mobile menu -->
+      <nav class="hide_desktop mobile_menu">
+        <!-- logo -->
+        <a href="#">
+          <img src="./img/Logo.png" class="m_logo" alt="" />
+        </a>
+        <img src="./img/Lo.png" class="m_user" alt="" />
+        <!-- darkmood icon -->
+        <i class="icofont-moon show_tablet"></i>
+        <img src="./img/icon-hamburger.svg" class="open_menu_btn" alt="" />
+
+        <!-- close_n_dark mode toggle on mobile -->
+        <div class="group_items">
+          <div class="close_n_darkmode">
+            <i class="icofont-moon"></i>
+            <img src="./img/icon-close.svg" class="close_menu_btn" alt="" />
+          </div>
+          <!-- menu_list -->
+          <ul class="menu_list">
+            <li class="menu_item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu_item"><a href="#">About</a></li>
+            <li class="menu_item"><a href="#">Connect</a></li>
+          </ul>
+          <div class="m_nav_sm">
+            <a href="#"> <i class="icofont-facebook sm"></i></a>
+            <a href="#"><i class="icofont-twitter sm"></i></a>
+            <a href="#"><i class="icofont-instagram sm"></i></a>
+            <a href="#"><i class="icofont-envelope sm"></i></a>
+          </div>
+          <footer class="m_menu_footer">
+            &copy;2021 Trending Gist. All rights reserved.
+          </footer>
+        </div>
+      </nav>
+      <!-- end of mobile menu -->
+    </header>
+
+    <main class="grid">
+      <section class="category_wrapper">
+        <h3>Categories:</h3>
+        <div class="hero_category">
+          <p><a href="#"> Technology</a></p>
+          <p><a href="#"> Food</a></p>
+          <p><a href="#"> Sport</a></p>
+          <p><a href="#"> Education</a></p>
+          <p><a href="#"> Lifestyle</a></p>
+          <p><a href="#"> Adventure</a></p>
+          <p><a href="#"> Nature</a></p>
+          <p><a href="#"> Religion</a></p>
+          <p><a href="#"> Politics</a></p>
+        </div>
+      </section>
+
+      <!-- <div class="flex"> -->
+      <section class="admin">
+        <div class="admin_info">
+          <img src="./img/Lo.png" alt="" />
+          <!-- <i class="icofont-user"></i> -->
+          <h3 class="username">Nathan Jumns</h3>
+          <p class="work">FE Dev & Blogger</p>
+          <div class="admin_sm">
+            <a href="#"> <i class="icofont-twitter"></i></a>
+            <a href="#"> <i class="icofont-linkedin"></i></a>
+            <a href="#"><i class="icofont-instagram"></i></a>
+            <a href="#"><i class="icofont-email"></i></a>
+          </div>
+          <hr />
+          <a href="#" class="abt_admin">About Admin</a>
+        </div>
+      </section>
+      <!-- end of admin -->
+
+      <section class="main_article">
+        <div class="article">
+          <div class="article_thumbnail">
+            <img
+              src="./img/main-blog/m-blog-1.jpg"
+              class="article_img"
+              alt=""
+            />
+            <h2>This is the post title</h2>
+            <div class="post_details">
+              <div class="tag">
+                <p>
+                  <i class="icofont-tag"></i> &nbsp;
+                  <a href="#" class="active">Food</a>
+                </p>
+                <p>
+                  <a href="#">Sport</a>
+                </p>
+                <p>
+                  <a href="#">Tech</a>
+                </p>
+                <p>
+                  <a href="#">Lifestyle</a>
+                </p>
+              </div>
+              <div class="detail">
+                <p>Admin Name &nbsp;&nbsp;&nbsp;<i class="icofont-user"></i></p>
+                <p>
+                  Day, Year &nbsp;&nbsp;&nbsp;<i class="icofont-calendar"></i>
+                </p>
+                <p>700k Views &nbsp;&nbsp;&nbsp;<i class="icofont-eye"></i></p>
+                <p>
+                  23 Comments &nbsp;&nbsp;&nbsp;<i class="icofont-comment"></i>
+                </p>
+              </div>
+            </div>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
+              commodi. <small><b>&mdash; Nathan Jumns</b></small>
+            </blockquote>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              dignissimos molestias aspernatur error sequi fugit! Exercitationem
+              saepe voluptas labore repellendus animi, eos cumque in, odio earum
+              perspiciatis, architecto neque magnam?
+            </p>
+            <p class="read_more">
+              <a href="#" class="read_more_btn btn">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- another article -->
+        <div class="article">
+          <div class="article_thumbnail">
+            <img
+              src="./img/main-blog/m-blog-2.jpg"
+              class="article_img"
+              alt=""
+            />
+            <h2>This is the post title</h2>
+            <div class="post_details">
+              <div class="tag">
+                <p><i class="icofont-tag"></i> &nbsp; <a href="#">Food</a></p>
+                <p>
+                  <a href="#">Sport</a>
+                </p>
+                <p>
+                  <a href="#">Tech</a>
+                </p>
+                <p>
+                  <a href="#">Lifestyle</a>
+                </p>
+              </div>
+              <div class="detail">
+                <p>Admin Name &nbsp;&nbsp;&nbsp;<i class="icofont-user"></i></p>
+                <p>
+                  Day, Year &nbsp;&nbsp;&nbsp;<i class="icofont-calendar"></i>
+                </p>
+                <p>700k Views &nbsp;&nbsp;&nbsp;<i class="icofont-eye"></i></p>
+                <p>
+                  23 Comments &nbsp;&nbsp;&nbsp;<i class="icofont-comment"></i>
+                </p>
+              </div>
+            </div>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
+              commodi. <small><b>&mdash; Nathan Jumns</b></small>
+            </blockquote>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              dignissimos molestias aspernatur error sequi fugit! Exercitationem
+              saepe voluptas labore repellendus animi, eos cumque in, odio earum
+              perspiciatis, architecto neque magnam?
+            </p>
+            <p class="read_more">
+              <a href="#" class="read_more_btn btn">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- another article -->
+        <div class="article">
+          <div class="article_thumbnail">
+            <img
+              src="./img/main-blog/m-blog-3.jpg"
+              class="article_img"
+              alt=""
+            />
+            <h2>This is the post title</h2>
+            <div class="post_details">
+              <div class="tag">
+                <p><i class="icofont-tag"></i> &nbsp; <a href="#">Food</a></p>
+                <p>
+                  <a href="#">Sport</a>
+                </p>
+                <p>
+                  <a href="#">Tech</a>
+                </p>
+                <p>
+                  <a href="#">Lifestyle</a>
+                </p>
+              </div>
+              <div class="detail">
+                <p>Admin Name &nbsp;&nbsp;&nbsp;<i class="icofont-user"></i></p>
+                <p>
+                  Day, Year &nbsp;&nbsp;&nbsp;<i class="icofont-calendar"></i>
+                </p>
+                <p>700k Views &nbsp;&nbsp;&nbsp;<i class="icofont-eye"></i></p>
+                <p>
+                  23 Comments &nbsp;&nbsp;&nbsp;<i class="icofont-comment"></i>
+                </p>
+              </div>
+            </div>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
+              commodi. <small><b>&mdash; Nathan Jumns</b></small>
+            </blockquote>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              dignissimos molestias aspernatur error sequi fugit! Exercitationem
+              saepe voluptas labore repellendus animi, eos cumque in, odio earum
+              perspiciatis, architecto neque magnam?
+            </p>
+            <p class="read_more">
+              <a href="#" class="read_more_btn btn">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <ul class="paging">
+            <li>
+              <a href="#"><i class="icofont-arrow-left"></i></a>
+            </li>
+            <li><a href="#">01</a></li>
+            <li><a href="#" class="active">02</a></li>
+            <li><a href="#">03</a></li>
+            <li><a href="#">08</a></li>
+            <li><a href="#">15</a></li>
+            <li>
+              <a href="#"><i class="icofont-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- aside bar -->
+      <section class="aside">
+        <aside>
+          <form action="">
+            <div class="site_search">
+              <input type="search" placeholder="Search..." name="" id="" />
+              <i class="icofont-search"></i>
+            </div>
+            <button type="submit">Search</button>
+          </form>
+        </aside>
+        <aside class="pop_post">
+          <h3>Popular Posts</h3>
+          <ul class="pop_post_list">
+            <li class="pop_post_item">
+              <img src="./img/popular-post/post1.jpg" alt="" />
+              <div>
+                <p><a href="#">Post title gonna go here</a></p>
+                <small>03 Hours ago</small>
+              </div>
+            </li>
+
+            <li class="pop_post_item">
+              <img src="./img/popular-post/post2.jpg" alt="" />
+              <div>
+                <p><a href="#">Post title gonna go here</a></p>
+                <small>03 Hours ago</small>
+              </div>
+            </li>
+
+            <li class="pop_post_item">
+              <img src="./img/popular-post/post3.jpg" alt="" />
+              <div>
+                <p><a href="#">Post title gonna go here</a></p>
+                <small>03 Hours ago</small>
+              </div>
+            </li>
+
+            <li class="pop_post_item">
+              <img src="./img/popular-post/post4.jpg" alt="" />
+              <div>
+                <p><a href="#">Post title gonna go here</a></p>
+                <small>03 Hours ago</small>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        <aside class="aside_categories">
+          <h3>Post Categories</h3>
+          <ul class="cat_list">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Politics</a></li>
+          </ul>
+        </aside>
+        <aside class="aside_newsletter">
+          <h3>Newsletter</h3>
+
+          <form action="">
+            <div class="newsletter">
+              <i class="icofont-email"></i>
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <p>You can unsubscribe at anytime</p>
+            <button>Subscribe!</button>
+          </form>
+        </aside>
+      </section>
+      <!-- end of side bar -->
+      <!-- </div> -->
+      <section class="footer">
+        <footer>
+          <div class="footer_abt">
+            <h4>About</h4>
+          </div>
+          <div class="footer_abt">
+            <h4>About</h4>
+          </div>
+          <div class="footer_abt">
+            <h4>About</h4>
+          </div>
+          <div class="footer_abt">
+            <h4>About</h4>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
