@@ -14,7 +14,7 @@
       <!-- desktop menu -->
       <nav class="hide_mobile">
         <a href="index.html">
-          <img src="./img/Logo.png" class="d_logo" alt="" />
+          <img src="./img/Logo.png" class="d_logo" alt="" title="Logo" />
         </a>
 
         <ul class="menu_list">
@@ -68,6 +68,32 @@
         </div>
       </nav>
       <!-- end of mobile menu -->
+      <!-- mobile admin -->
+      <section class="m_admin hide_desktop hide_tablet">
+        <div class="m_admin_info">
+          <img src="./img/icon-close.svg" class="close_admin_btn" alt="" />
+          <h3 class="username">Nathan Jonah</h3>
+          <p class="work">
+            I'm a Frontend Developer and a blogger. I do what I love doing most
+            and the above mentioned are among.
+          </p>
+          <div class="admin_sm">
+            <a href="https://twitter.com/mr_jumns">
+              <i class="icofont-twitter m_sm"></i
+            ></a>
+            <a href="#"> <i class="icofont-linkedin m_sm"></i></a>
+            <a href="https://instagram.com/mr_jumns"
+              ><i class="icofont-instagram m_sm"></i
+            ></a>
+            <a href="#!"><i class="icofont-email m_sm"></i></a>
+            <a href="https://www.jnathan.com.ng"
+              ><i class="icofont-globe-alt m_sm"></i
+            ></a>
+          </div>
+          <hr />
+          <a href="#" class="m_abt_admin"> More</a>
+        </div>
+      </section>
     </header>
     <main>
       <div class="post_wrapper">
@@ -98,11 +124,12 @@
           <div class="post_details">
             <div class="detail">
               <a href="#"
-                ><p>Admin Name &nbsp;&nbsp;&nbsp;<i class="icofont-user"></i></p
+                ><p>
+                  Nathan Jonah &nbsp;&nbsp;&nbsp;<i class="icofont-user"></i></p
               ></a>
               <a href="#">
                 <p>
-                  Day, Year &nbsp;&nbsp;&nbsp;<i
+                  Feb 12, 2021 &nbsp;&nbsp;&nbsp;<i
                     class="icofont-calendar"
                   ></i></p
               ></a>
@@ -179,39 +206,32 @@
 
             <div class="comments">
               <h2 id="comments">Comments</h2>
+              <!-- single comment -->
               <div class="comment">
-                <img src="./img/Lo.png" alt="" />
+                <img src="./img/Lo.png" alt="Avatar" />
                 <div>
-                  <h4>John Doe</h4>
-                  <span>Feb 6, 2021 at 2:21pm</span>
+                  <h4 class="name">John Doe</h4>
+                  <div class="time_n_date">
+                    <span class="date"></span>
+                    <span class="time"></span>
+                  </div>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Culpa beatae at reprehenderit quas impedit, consequatur
                     obcaecati, eius ab sapiente error eligendi eaque illo,
                     fugiat rerum!
                   </p>
-                  <button type="submit">Reply</button>
+                  <i class="icofont-like"></i>
+                  <!-- <span class="num_of_likes">1</span> -->
                 </div>
               </div>
-              <div class="comment">
-                <img src="./img/Lo.png" alt="" />
-                <div>
-                  <h4>John Doe</h4>
-                  <span>Feb 6, 2021 at 2:21pm</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa beatae at reprehenderit quas impedit, consequatur
-                    obcaecati, eius ab sapiente error eligendi eaque illo,
-                    fugiat rerum!
-                  </p>
-                  <button type="submit">Reply</button>
-                </div>
-              </div>
+              <!-- end of single comment -->
             </div>
           </div>
           <!-- enter comment -->
-          <div class="write_comment">
-            <form action="">
+          <h2 style="padding: 1em 0">Leave A Comment</h2>
+          <div>
+            <form action="" class="write_comment">
               <div class="input">
                 <label for="name">Name*</label>
                 <input type="text" id="name" />
@@ -380,10 +400,14 @@
             <a href="#"> <i class="icofont-facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="icofont-twitter"></i></a>
+            <a href="https://www.twitter.com/mr_jumns"
+              ><i class="icofont-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="icofont-github"></i></a>
+            <a href="https://www.github.com/jumns"
+              ><i class="icofont-github"></i
+            ></a>
           </li>
           <li>
             <a href="#"><i class="icofont-telegram"></i></a>
