@@ -3,28 +3,33 @@ const closeBtn = document.querySelector(".close_menu_btn");
 const menu = document.querySelector(".group_items");
 
 openBtn.addEventListener("click", () => {
-  menu.classList.toggle("show");
+  menu.classList.add("show");
   document.body.classList.add("overlay");
+  menu.classList.add("open");
 });
 
 closeBtn.addEventListener("click", () => {
   menu.classList.remove("show");
   document.body.classList.remove("overlay");
+  menu.classList.remove("open");
 });
 
 // mobile admin toggle
 const adminAvi = document.querySelector(".m_user");
 const adminSection = document.querySelector(".m_admin");
 const close = document.querySelector(".close_admin_btn");
+console.log(close);
 
 adminAvi.addEventListener("click", () => {
-  adminSection.style.display = "flex";
+  adminSection.style.visibility = "visible";
   document.body.classList.add("overlay");
+  adminSection.classList.add("animate");
 });
 
 close.addEventListener("click", () => {
-  adminSection.style.display = "none";
+  adminSection.style.visibility = "hidden";
   document.body.classList.remove("overlay");
+  adminSection.classList.remove("animate");
 });
 
 // Date and time stamp
@@ -175,8 +180,8 @@ addComment.addEventListener("submit", (e) => {
   const p = document.createElement("p");
 
   // like button
-  const likeBtn = document.createElement("i");
-  likeBtn.classList.add("icofont-like");
+  const newLikeBtn = document.createElement("i");
+  newLikeBtn.classList.add("icofont-like");
 
   // appending elements
   p.appendChild(document.createTextNode(textareaValue));
@@ -198,7 +203,7 @@ addComment.addEventListener("submit", (e) => {
   timeAndDate.appendChild(timeStamp);
   div2.appendChild(timeAndDate);
   div2.appendChild(p);
-  div2.appendChild(likeBtn);
+  div2.appendChild(newLikeBtn);
   comment.appendChild(imgSrc);
   comment.appendChild(div2);
   commentContainer.appendChild(comment);
@@ -206,14 +211,19 @@ addComment.addEventListener("submit", (e) => {
   // clearing value from inputs
   addComment.querySelector("textarea").value = "";
   addComment.querySelector("#name").value = "";
+
+  newLikeBtn.addEventListener("click", likeBtn);
+  newLikeBtn.addEventListener("click", function () {});
 });
 
 const like = document.querySelector(".icofont-like");
 like.addEventListener("click", likeBtn);
-function likeBtn() {
-  let addLike = like.textContent;
+function likeBtn(event) {
+  const likeElem = event.currentTarget;
+  let addLike = likeElem.textContent;
   addLike = Number(addLike);
   addedLike = addLike + 1;
-  like.textContent = addedLike;
-  return like;
+  likeElem.textContent = addedLike;
+  likeElem.classList.add("liked");
+  return addedLike;
 }
